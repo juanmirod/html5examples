@@ -23,11 +23,12 @@ nav {
 	position: fixed;
 	left: 0px;
 	top: 0px;
-	background-color: #c8e6c9;	
+	background-color: #4caf50;	
 }
 
 nav h2 {
 	padding: 0px 20px;
+	color: white;
 }
 
 nav ul {
@@ -37,10 +38,16 @@ nav ul {
 
 nav ul li {
 	padding: 15px 20px 5px 20px;
+	color: white;
 }
 
 nav ul li:hover {
-	color: #1b5e20;
+	color: #4caf50;
+	background-color: white;
+}
+
+nav ul li.active {
+	color: black;
 	background-color: white;
 }
 
@@ -50,5 +57,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #1b5e20;
+	color: #4caf50;
 }
