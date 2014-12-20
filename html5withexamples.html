@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Html5 with examples</title>
         
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css">
 
     </head>
@@ -16,12 +18,42 @@
         <nav>
             <h2>Contents</h2>
             <ul>
-                <li class="active"><a href="#">Semantics</a></li>
-                <li>Video</li>
-                <li>Audio</li>
-                <li>Geolocation</li>
-                <li>Forms</li>
-                <li>WebGL</li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-graduation-cap fa-2x"></i>
+                        <span class="nav-text">Semantics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-video-camera fa-2x"></i>
+                        <span class="nav-text">Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-volume-up fa-2x"></i>
+                        <span class="nav-text">Audio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">Geolocation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-check-square fa-2x"></i>
+                        <span class="nav-text">Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-cubes fa-2x"></i>
+                        <span class="nav-text">WebGL</span>
+                    </a>
+                </li>
                 <li>Drag and drop</li>
                 <li>Websockets</li>
                 <li>Web Storage</li>
@@ -35,21 +67,49 @@
             
             <section>
                 <article>
+                    <header><h2>Semantics</h2></header>
+                    <p>The new semantic tags allows us to build simpler layouts and clearer html code.</p>
+                    <p>You can use the tags header, footer, section, article, nav and aside in your layouts to define different page areas:</p>
+                    <div class="layout-example">
+                        Layout:
+                        <header>This is the header</header>
+                        <div class="nav">Main navigation area</div>
+                        <aside>Side menu</aside>
+                        <section>
+                            <article>An article</article>
+                            <article>Another article</article>
+                        </section>
+                        <div class="clearer"></div>
+                    </div>
+                    <div class="layout-example-code">
+                        Code:
+                        <pre class="code">
+&lt;header&gt;This is the header&lt;/header&gt;
+&lt;nav&gt;Main navigation area&lt;/nav&gt;
+&lt;aside&gt;Side menu&lt;/aside&gt;
+&lt;section&gt;
+    &lt;article&gt;An article&lt;/article&gt;
+    &lt;article&gt;Another article&lt;/article&gt;
+&lt;/section&gt; 
+                        </pre>
+                        
+                    </div>
+                    <div class="clearer"></div>
+                </article>
+                <article>
                     <header>Video</header>
                     <p>Video element allow to show a video for any platform without any extra plugin.</p>
                     <video controls>
                         <source src="pluto.mp4" type="video/mp4"/>
                     </video>
                 </article>
-                <article>
+                <article>1
                     <header>Audio</header>
                 </article>
                 <article>
                     <header>Canvas</header>
                 </article>
-                <article>
-                    <header>Semantics</header>
-                </article>
+                
                 <article>
                     <header>Forms</header>
                 </article>

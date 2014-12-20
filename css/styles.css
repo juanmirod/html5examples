@@ -1,13 +1,21 @@
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Droid Sans", sans-serif;
 	font-weight: 400;
 	padding: 0px;
 	margin: 0px;
 }
 
 h1, h2, h3, h4, h5 {
-	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
 	color: #4caf50;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2, h3, h4, h5 {
+	font-weight: 600;
 }
 
 .main-container {
@@ -32,6 +40,7 @@ nav h2 {
 }
 
 nav ul {
+	font-weight: 700;
 	list-style-type: none;
 	padding: 0px;
 }
@@ -47,15 +56,76 @@ nav ul li:hover {
 }
 
 nav ul li.active {
-	color: black;
+	color: #4caf50;
 	background-color: white;
 }
 
 nav ul li a {
-	color: black;
+	color: inherit;
 	text-decoration: none;
 }
 
 nav ul li a:hover {
-	color: #4caf50;
+	color: inherit;
+}
+
+nav ul li a i {
+	vertical-align: middle;
+	width: 40px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+pre.code {
+	background-color: #10585B;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+.clearer {
+	clear: both;
+}
+
+/* Semantics section */
+.layout-example {
+	float: left;
+	margin-right: 40px;
+}
+
+.layout-example * {
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+}
+
+.layout-example header {
+	margin-top: 10px;
+	background-color: #DE9B61; 
+}
+
+.layout-example .nav {
+	background-color: #DE6461;	
+}
+
+.layout-example aside {
+	background-color: #4CAF52;
+	float: left;
+	height: 80px;
+}
+
+.layout-example section {
+	background-color: #5E9C9F;
+	float: left;
+}
+
+.layout-example article {
+	margin-bottom: 1px;
+	background-color: #96C7C9;
+}
+
+.layout-example-code {
+	float: left;
+	
 }
