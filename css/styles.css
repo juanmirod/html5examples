@@ -1,12 +1,12 @@
 body {
-	font-family: "Droid Sans", sans-serif;
+	font-family: "Droid Sans", sans-serif, arial;
 	font-weight: 400;
 	padding: 0px;
 	margin: 0px;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif, arial;
 	color: #4caf50;
 }
 
@@ -19,9 +19,14 @@ h2, h3, h4, h5 {
 }
 
 .main-container {
-	width: 80%;
+	width: 800px;
 	margin-left: 200px;
 	padding: 10px 20px;
+}
+
+.main-container h1 {
+	font-size: 46px;
+	margin-top: 10px;
 }
 
 nav {
@@ -48,6 +53,7 @@ nav ul {
 nav ul li {
 	padding: 15px 20px 5px 20px;
 	color: white;
+	cursor: pointer;
 }
 
 nav ul li:hover {
@@ -76,12 +82,24 @@ nav ul li a i {
 	margin-right: 10px;
 }
 
+h1 i {
+	vertical-align: middle;
+	text-align: center;
+	margin-right: 10px;
+}
+
 pre.code {
 	background-color: #10585B;
 	color: white;
 	padding: 20px;
 	border-radius: 5px;
 	margin: 10px 0px;
+	font-family: "Source Code Pro", mono;
+	font-size: 15px;
+}
+
+video {
+	width: 500px;
 }
 
 .clearer {
@@ -98,6 +116,10 @@ pre.code {
 	border-radius: 5px;
 	padding: 10px;
 	color: white;
+}
+
+.layout-example .clearer {
+	padding: 0px;
 }
 
 .layout-example header {
@@ -123,6 +145,10 @@ pre.code {
 .layout-example article {
 	margin-bottom: 1px;
 	background-color: #96C7C9;
+}
+
+.layout-example footer {
+	background-color: #DE9B61; 
 }
 
 .layout-example-code {
