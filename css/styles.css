@@ -29,6 +29,10 @@ h2, h3, h4, h5 {
 	margin-top: 10px;
 }
 
+.main-container h2 {
+	margin-top: 80px;
+}
+
 nav {
 	margin: 0;
 	padding: 10px 0px;

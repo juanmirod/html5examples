@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html5 with examples</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    
+    <body>
+        <nav>
+            <h2>Contents</h2>
+            <ul>
+                <li>
+                    <a href="#semantics">
+                        <i class="fa fa-graduation-cap fa-2x"></i>
+                        <span class="nav-text">Semantics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video">
+                        <i class="fa fa-video-camera fa-2x"></i>
+                        <span class="nav-text">Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#audio">
+                        <i class="fa fa-volume-up fa-2x"></i>
+                        <span class="nav-text">Audio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#geolocation">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">Geolocation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#forms">
+                        <i class="fa fa-check-square fa-2x"></i>
+                        <span class="nav-text">Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#canvas">
+                        <i class="fa fa-paint-brush fa-2x"></i>
+                        <span class="nav-text">Canvas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#webgl">
+                        <i class="fa fa-cubes fa-2x"></i>
+                        <span class="nav-text">WebGL</span>
+                    </a>
+                </li>
+                <li>Drag and drop</li>
+                <li>Websockets</li>
+                <li>Web Storage</li>
+                <li>Web Workers</li>
+            </ul>
+        </nav>
+        <div class="main-container">
+            <header>
+                <h1><i class="fa fa-html5 fa-2x"></i> Html5 with examples</h1>
+            </header>
+            
+            <section>
+                <article>
+                    <header id="semantics">
+                        <h2>Semantics</h2>
+                    </header>
+                    <p>The new semantic tags allows us to build simpler layouts and clearer html code.</p>
+                    <p>You can use the tags header, footer, section, article, nav and aside in your layouts to define different page areas:</p>
+                    <div class="layout-example">
+                        Layout:
+                        <header>This is the header</header>
+                        <div class="nav">Main navigation area</div>
+                        <aside>Side menu</aside>
+                        <section>
+                            <article>An article</article>
+                            <article>Another article</article>
+                        </section>
+                        <div class="clearer"></div>
+                        <footer>This is the footer</footer>
+                    </div>
+                    <div class="layout-example-code">
+                        Code:
+                        <pre class="code">
+&lt;header&gt;This is the header&lt;/header&gt;
+&lt;nav&gt;Main navigation area&lt;/nav&gt;
+&lt;aside&gt;Side menu&lt;/aside&gt;
+&lt;section&gt;
+    &lt;article&gt;An article&lt;/article&gt;
+    &lt;article&gt;Another article&lt;/article&gt;
+&lt;/section&gt;
+&lt;footer&gt;Section footer&lt;/footer&gt;
+                        </pre>
+                    </div>
+                    <div class="clearer"></div>
+                    <p>You can have several headers and footers in a page, but only one 'nav' and one 'aside'. Each section or article can have its own header and its own footer:</p>
+                    <div class="layout-example">
+                        Layout:
+                        <div>
+                        <section>
+                            <header>Section header</header>
+                            <article>
+                                <header>Article header</header>
+                                    An article
+                                <footer>Article footer</footer>
+                            </article>
+                            <article>
+                                <header>Article header</header>
+                                    Another article
+                                <footer>Article footer</footer>    
+                            </article>
+                            <footer>Section footer</footer>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="layout-example-code">
+                        Code:
+                        <pre class="code">
+&lt;section&gt;
+    &lt;header&gt;Section header&lt;/header&gt;
+    &lt;article&gt;
+        &lt;header&gt;Article header&lt;/header&gt;
+            An article
+        &lt;footer&gt;Article footer&lt;/footer&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+        &lt;header&gt;Article header&lt;/header&gt;
+            Another article
+        &lt;footer&gt;Article footer&lt;/footer&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;Section footer&lt;/footer&gt;
+&lt;/section&gt;
+
+                        </pre>
+                    </div>
+                    <div class="clearer"></div>
+                </article>
+                <article>
+                    <header id="video">
+                        <h2>Video</h2>
+                    </header>
+                    <p>Video element allows to show a video for any platform without any extra plugin.</p>
+                    <video controls>
+                        <source src="pluto.mp4" type="video/mp4"/>
+                    </video>
+                    <p>Code:</p>
+                    <pre class="code">
+    &lt;video controls&gt;
+        &lt;source src="pluto.mp4" type="video/mp4"/&gt;
+    &lt;/video&gt;
+                    </pre>
+                </article>
+                <article>
+                    <header id="audio">
+                        <h2>Audio</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="canvas">
+                        <h2>Canvas</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="webgl">
+                        <h2>WebGL</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="forms">
+                        <h2>Forms</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="websockets">
+                        <h2>Websockets</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="webstorage">
+                        <h2>Web Storage</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="geolocation">
+                        <h2>Geolocation</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="webworkers">
+                        <h2>Web Workers</h2>
+                    </header>
+                </article>
+                <article>
+                    <header id="draganddrop">
+                        <h2>Drag and drop</h2>
+                    </header>
+                </article>  
+            </section>
+        </div>
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('nav li').click(function(e){
+                    $('nav li').removeClass('active');
+                    $(this).addClass('active');
+                    $('html, body').animate({
+                        scrollTop: $(this.firstElementChild.hash).offset().top
+                    }, 750, "easeOutQuint");
+
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
